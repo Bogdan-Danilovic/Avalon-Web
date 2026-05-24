@@ -3,7 +3,7 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Room } from '@/lib/types';
-import { advanceToDiscussion } from '@/lib/firestore';
+import { advanceToDiscussion, shufflePrompt } from '@/lib/firestore';
 import { Button } from '@/components/ui/Button';
 
 interface Props {
@@ -129,9 +129,18 @@ export function RoleRevealScreen({ room, playerId }: Props) {
         )}
 
         {isHost && (
-          <Button fullWidth onClick={handleAdvance}>
-            Svi su videli → Diskusija
-          </Button>
+          <div className="w-full flex flex-col gap-2">
+            <Button fullWidth onClick={handleAdvance}>
+              Svi su videli → Diskusija
+            </Button>
+            <Button
+              variant="ghost"
+              fullWidth
+              onClick={() => shufflePrompt(room.code)}
+            >
+              Zameni pitanje
+            </Button>
+          </div>
         )}
       </div>
     </div>

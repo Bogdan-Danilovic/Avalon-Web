@@ -16,7 +16,7 @@ export const svakodnevica: CategoryData = {
     { crew: 'Koji zvuk te budi bolje od alarma?', impostor: 'Koji zvuk te uspavljuje bolje od bilo čega?' },
     { crew: 'Šta je prva stvar koju uzmeš kad izlaziš iz kuće?', impostor: 'Šta je prva stvar koju skineš kad uđeš u kuću?' },
     { crew: 'Opiši savršenu pauzu na poslu.', impostor: 'Opiši najgoru stvar na poslu.' },
-    { crew: 'Koji je tvoj rituаl za opuštanje posle napornog dana?', impostor: 'Koji je tvoj ritual za motivaciju na početku dana?' },
+    { crew: 'Koji je tvoj ritual za opuštanje posle napornog dana?', impostor: 'Koji je tvoj ritual za motivaciju na početku dana?' },
     { crew: 'Da možeš da dodaš jedan sat danu, za šta bi ga koristio?', impostor: 'Da moraš da izbaciš jednu aktivnost iz dana, koju bi izbacio?' },
     { crew: 'Šta ti oduzima najviše vremena a ne bi trebalo?', impostor: 'Šta ti oduzima najmanje vremena a donosi najviše radosti?' },
     { crew: 'Opiši savršen kišni dan kod kuće.', impostor: 'Opiši savršen sunčan dan napolju.' },

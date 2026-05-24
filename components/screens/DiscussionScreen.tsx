@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Room } from '@/lib/types';
-import { advanceToVoting } from '@/lib/firestore';
+import { advanceToVoting, shufflePrompt } from '@/lib/firestore';
 import { Button } from '@/components/ui/Button';
 
 interface Props {
@@ -104,12 +104,21 @@ export function DiscussionScreen({ room, playerId }: Props) {
           </p>
         </div>
 
-        {/* Host advance */}
-        <div className="mt-auto pt-4">
+        {/* Host controls */}
+        <div className="mt-auto pt-4 flex flex-col gap-2">
           {isHost && (
-            <Button fullWidth onClick={handleAdvance}>
-              Počni glasanje
-            </Button>
+            <>
+              <Button fullWidth onClick={handleAdvance}>
+                Pocni glasanje
+              </Button>
+              <Button
+                variant="ghost"
+                fullWidth
+                onClick={() => shufflePrompt(room.code)}
+              >
+                Zameni pitanje
+              </Button>
+            </>
           )}
         </div>
       </div>

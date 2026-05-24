@@ -81,7 +81,7 @@ export const zivotinje: CategoryData = {
     { crew: 'Orao', impostor: 'Pogled koji vidi sve' },
     { crew: 'Kamila', impostor: 'Preživljava bez onoga što svima treba' },
     { crew: 'Rakun', impostor: 'Lopov sa maskom na licu' },
-    { crew: 'Pelikаn', impostor: 'Džep koji gutа sve' },
+    { crew: 'Pelikan', impostor: 'Džep koji guta sve' },
     { crew: 'Noj', impostor: 'Ne leti, ali ne znaš da mu priđeš' },
     { crew: 'Morski konjic', impostor: 'Tata koji radi mamin posao' },
     { crew: 'Svitac', impostor: 'Noćno svetlo koje se ne gasi' },

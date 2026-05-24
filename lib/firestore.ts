@@ -135,6 +135,16 @@ export async function updateRoomSettings(
   }
 }
 
+export async function shufflePrompt(code: string): Promise<void> {
+  const ref = doc(db, 'rooms', code);
+  const snap = await getDoc(ref);
+  if (!snap.exists()) return;
+
+  const room = snap.data() as Room;
+  const prompt = getRandomPrompt(room.category as Category, room.gameMode);
+  await updateDoc(ref, { currentPrompt: prompt });
+}
+
 export async function kickPlayer(code: string, playerId: string): Promise<void> {
   const ref = doc(db, 'rooms', code);
   const snap = await getDoc(ref);

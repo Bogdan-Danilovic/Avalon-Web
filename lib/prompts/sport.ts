@@ -11,7 +11,7 @@ export const sport: CategoryData = {
     { crew: 'Koji sportski momenat bi ponovo gledao kao da ga vidiš prvi put?', impostor: 'Koji sportski rezultat te je toliko iznenadio da nisi mogao da veruješ?' },
     { crew: 'Da moraš da treniraš jedan sport profesionalno, koji bi bio?', impostor: 'Da moraš da sudiš jedan sport profesionalno, koji bi bio?' },
     { crew: 'Opiši pravilo u sportu koje ti se čini potpuno besmisleno.', impostor: 'Opiši sport koji bi izmislio da imaš priliku.' },
-    { crew: 'Koji tim navijаš od malih nogu?', impostor: 'Koji tim si počeo da mrziš od malih nogu?' },
+    { crew: 'Koji tim navijaš od malih nogu?', impostor: 'Koji tim si počeo da mrziš od malih nogu?' },
     { crew: 'Da si selektor reprezentacije, koji bi ti bio prvi potez?', impostor: 'Da si predsednik sportskog kluba, koji bi ti bio prvi potez?' },
     { crew: 'Koji sportista bi bio dobar glumac?', impostor: 'Koji glumac bi bio dobar sportista?' },
     { crew: 'Opiši najluđe sportsko navijanje koje si video.', impostor: 'Opiši najluđi sportski ritual pre meča.' },
